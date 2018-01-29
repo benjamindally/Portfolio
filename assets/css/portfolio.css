@@ -1,0 +1,367 @@
+html{ /*makes it so the scrollbar doesn't move content*/
+	overflow-y: scroll; 
+}
+
+html, body{ /*creates height for sticky footer*/
+	height: 100%; 
+}
+
+body{ 
+	font-family: Tahoma, Verdana, san-serif;
+	font-size: small;
+	margin: 0px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	line-height: 18px;
+}
+
+#allcontent{ /*affects all content and creates overall container for it*/
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	flex: 1 0 auto;
+	text-align: center;
+}
+
+header{
+	height: 60px;
+	width: 100%;
+}
+
+#emblembox{ /*small box around logo above content on all pages*/
+	margin: 15px auto 30px auto;
+	width: 80px;
+	position: relative;
+	right: 5px;
+}
+
+#emblem{ /*small logo above all content*/
+	width: 100%;
+}
+
+.little_name{
+	width: 100%;
+	font-size: 120%;
+	font-family: 'Amatic SC', cursive;
+	padding-right: 0px;
+	position: relative;
+	right: 3px;
+}
+
+a{ /*removes default color and underline*/
+	text-decoration: none;
+	color: #000;
+} 
+
+a:hover{ /*changes color when hovered over*/
+	color: #CCC;
+}
+
+a:visited{ /*changes color of visited links*/
+	color: darkgray;
+}
+
+ul{ /*removes bullets on list*/
+	list-style-type: none;
+}
+
+nav{ 
+	border-bottom: 1px solid gray;
+	position: fixed;
+	padding: 10px;
+	width: 100%;
+	background: white;
+	z-index: 1000;
+}
+
+nav ul{ 
+	text-align: center;
+	margin-right: 30px;
+}
+
+nav ul li{
+	display: inline;
+	font-size: 80%;
+	padding: 10px;
+}
+
+#spacer{ /*spacer to allow for position fixed header to not overlay */
+	height: 30px;
+}
+
+#leftnav{ /*left navigation panel*/
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin-right: 20px;
+}
+
+#leftnav ul{
+	text-align: center;
+}
+
+#leftnav ul li{
+	padding: 8px;
+	font-size: 80%;
+}
+
+#main { /*content inbetween leftnav panel and aside*/
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	padding-right: 15px;
+
+}
+
+#main h2{
+	font-size: 150%;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+#main p{
+	font-weight: normal;
+	text-indent: 20px;
+	margin-bottom: 5px;
+}
+
+.wrapper{
+	text-align: center;
+	width: 80%;
+	margin: auto;
+}
+
+#logo{ /*splash page logo*/
+	width: 40%;
+	margin: 30px auto 15px auto;
+	padding-left: 50px;
+	min-width: 150px;
+}
+
+#my_name{ /*splash page name*/
+	text-align: center;
+	margin-bottom: 250px;
+	margin-left: 10px;
+	font-weight: normal;
+	font-family: 'Amatic SC', cursive;
+	font-size: 200%;
+}
+
+
+aside{ /*aside to right of main content*/
+	float: right;
+	width:200px;
+	height: 80%;
+	margin-left: 20px;
+}
+
+aside ul li{
+	padding: 8px;
+	font-size: 80%;
+}
+
+.follow{ /*small icons for links to twitter, github, etc*/
+	width: 30px;
+}
+
+footer{
+	clear: both;
+	border-top: 1px solid gray;
+	position: relative;
+	right: 10px;
+	padding: 5px 0px 5px 0px;
+}
+
+footer p{
+	text-align: center;
+}
+
+#selfie{ /*selfie on about page*/
+	float: left;
+	width: 100px;
+	padding-right: 8px;
+	padding-bottom: 5px;
+	border-radius: 15px;
+}
+
+#portfolio_thumbnails{
+	margin-bottom: 200px;
+}
+.project_photos{ /*small portfolio project pictures*/
+	height: 150px;
+	width: 250px;
+	border: 2px solid black;
+	margin: 20px;
+}
+
+#box_1{ /*my first website*/
+	position: relative;
+	float: left;
+	background-image: url('../images/firstsite.png');
+	background-size: cover;
+}
+#box_2{ /*rpg game*/
+	float: right;
+	background-image: url('../images/chrono_trigger_pixel_art.png');
+	background-size: cover;
+}
+
+#box_3{ /*countdown timer*/
+	position: relative;
+	float: left;
+	background-image: url('../images/countdown.jpg');
+	background-size: cover;
+}
+
+#box_4{ /*debugging*/
+	position: relative;
+	float: right;
+	background-image: url('../images/debugging.jpg');
+	background-size: cover;
+}
+
+#box_5{ /*mobile apps*/
+	position: relative;
+	float: left;
+	background-image: url('../images/mobile.jpg');
+	background-size: cover;
+}
+
+#box_6{ /*group projects*/
+	position: relative;
+	float: right;
+	background-image: url('../images/teamwork.jpg');
+	background-size: cover;
+}
+
+.project_spans{ /*title/caption on portfolio project pics*/
+	background: #708090;
+	text-align: center;
+	margin-top: 105px;
+	color: ghostwhite;
+	font-size: 150%;
+	padding: 8px 0px 8px 0px;
+	opacity: .9;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#contact_form {
+	text-align: left;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: lightgray;
+}
+
+.media_aside{
+	visibility: hidden;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px){
+	#leftnav{
+		display: none;
+	}
+
+	aside{ /*aside to right of main content*/
+	float: right;
+	width:200px;
+	height: 200px;
+	margin-left: 20px;
+}
+
+	aside ul li{
+	padding: 8px;
+	font-size: 80%;
+	display: inline;
+	margin-top: 50px;
+}
+	.connect_icons{
+		padding-top: 50px;
+	}
+
+	#main{
+		position: relative;
+		float: right;
+		width: 50%;
+	}
+}
+
+
+@media only screen and (min-width: 640px) and (max-width: 768px){
+	#leftnav{
+	display: none;
+	}
+
+	#main{
+		position: relative
+		width: 80%;
+		height: 80%;
+	}
+
+	.main_aside{
+		display: none;
+	}
+
+	.media_aside{
+		visibility: visible;
+		text-align: center;
+		margin-top: 100px;
+		margin-bottom: 50px;
+	}
+
+	.media_aside ul li{
+		display: inline;
+		padding: 0px 15px 0px 15px;
+	}
+}
+
+
+@media only screen and (max-width: 640px){
+	#leftnav{
+	display: none;
+	}
+
+	#main{
+		position: relative;
+		width: 80%;
+		height: 80%;
+	}
+	
+	.main_aside{
+	display: none;
+	}
+
+	.media_aside{
+	visibility: visible;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	}
+
+	.media_aside ul li{
+		display: inline;
+		padding: 0px 15px 0px 15px;
+	}
+}
