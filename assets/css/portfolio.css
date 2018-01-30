@@ -22,6 +22,7 @@ body{
 	margin-right: auto;
 	flex: 1 0 auto;
 	text-align: center;
+	min-height: 122vh;
 }
 
 header{
@@ -47,6 +48,15 @@ header{
 	padding-right: 0px;
 	position: relative;
 	right: 3px;
+}
+
+.page_header{
+	font-size: 200%;
+	position: relative;
+	right: 9px;
+	margin-bottom: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
 }
 
 a{ /*removes default color and underline*/
@@ -86,15 +96,16 @@ nav ul li{
 	padding: 10px;
 }
 
-#spacer{ /*spacer to allow for position fixed header to not overlay */
+.spacer{ /*spacer to allow for position fixed header to not overlay */
 	height: 30px;
 }
 
 #leftnav{ /*left navigation panel*/
 	float: left;
-	width: 200px;
+	width: 10%;
 	height: 200px;
-	margin-right: 20px;
+	margin-left: 20px
+
 }
 
 #leftnav ul{
@@ -106,22 +117,15 @@ nav ul li{
 	font-size: 80%;
 }
 
-#main { /*content inbetween leftnav panel and aside*/
+.main { /*content inbetween leftnav panel and aside*/
 	width: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: justify;
-	padding-right: 15px;
 
 }
 
-#main h2{
-	font-size: 150%;
-	text-align: center;
-	margin-bottom: 8px;
-}
-
-#main p{
+.main p{
 	font-weight: normal;
 	text-indent: 20px;
 	margin-bottom: 5px;
@@ -143,18 +147,21 @@ nav ul li{
 #my_name{ /*splash page name*/
 	text-align: center;
 	margin-bottom: 250px;
-	margin-left: 10px;
 	font-weight: normal;
 	font-family: 'Amatic SC', cursive;
 	font-size: 200%;
+	position: relative;
+	right: 3px;
 }
 
 
 aside{ /*aside to right of main content*/
+	
 	float: right;
-	width:200px;
+	width:10%;
 	height: 80%;
-	margin-left: 20px;
+	margin-right: 20px;
+
 }
 
 aside ul li{
@@ -167,11 +174,7 @@ aside ul li{
 }
 
 footer{
-	clear: both;
 	border-top: 1px solid gray;
-	position: relative;
-	right: 10px;
-	padding: 5px 0px 5px 0px;
 }
 
 footer p{
@@ -203,6 +206,7 @@ footer p{
 	background-size: cover;
 }
 #box_2{ /*rpg game*/
+	position: relative;
 	float: right;
 	background-image: url('../images/chrono_trigger_pixel_art.png');
 	background-size: cover;
@@ -250,6 +254,8 @@ footer p{
 
 #contact_form {
 	text-align: left;
+	padding: 0px 30px 30px 0px;
+
 }
 
 input[type=text], select, textarea {
@@ -279,15 +285,24 @@ input[type=submit]:hover {
 	visibility: hidden;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 980px){
+@media only screen and (min-width: 769px) and (max-width: 980px){
+	#logo{
+		padding-left: 10px;
+	}
+
+	#my_name{
+	position: relative;
+	right: 10px;
+	}
+
 	#leftnav{
 		display: none;
 	}
 
 	aside{ /*aside to right of main content*/
 	float: right;
-	width:200px;
-	height: 200px;
+	width: 23%;
+	height: 100px;
 	margin-left: 20px;
 }
 
@@ -301,23 +316,41 @@ input[type=submit]:hover {
 		padding-top: 50px;
 	}
 
-	#main{
+	.main{
 		position: relative;
 		float: right;
 		width: 50%;
+	}
+	
+	#portfolio_thumbnails{
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	.portfolio_links{
+		display: inline-block;
 	}
 }
 
 
 @media only screen and (min-width: 640px) and (max-width: 768px){
+	#logo{
+		padding-left: 10px;
+	}
+
+	#my_name{
+	position: relative;
+	right: 5px;
+	}
+
 	#leftnav{
 	display: none;
 	}
 
-	#main{
+	.main{
 		position: relative
 		width: 80%;
-		height: 80%;
+		height: 60%;
 	}
 
 	.main_aside{
@@ -335,10 +368,27 @@ input[type=submit]:hover {
 		display: inline;
 		padding: 0px 15px 0px 15px;
 	}
+
+	input[type=text], select, textarea {
+    width: 100%;
+	}
+
+	#portfolio_thumbnails{
+	height: 80%;
+}
 }
 
 
 @media only screen and (max-width: 640px){
+	#logo{
+	padding-left: 10px;
+	}
+
+	#my_name{
+	position: relative;
+	right: 5px;
+	}
+
 	#leftnav{
 	display: none;
 	}
@@ -346,11 +396,17 @@ input[type=submit]:hover {
 	#main{
 		position: relative;
 		width: 80%;
-		height: 80%;
+		height: 60%;
 	}
 	
 	.main_aside{
 	display: none;
+	}
+
+	#main_portfolio_page{
+		position: relative;
+		width: 100%;
+		height: 70%;		
 	}
 
 	.media_aside{
@@ -363,5 +419,13 @@ input[type=submit]:hover {
 	.media_aside ul li{
 		display: inline;
 		padding: 0px 15px 0px 15px;
+	}
+
+	#portfolio_thumbnails{
+		text-align: center;
+	}
+
+	.portfolio_links{
+		display: inline-block;
 	}
 }
