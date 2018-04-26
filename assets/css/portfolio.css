@@ -274,6 +274,21 @@ footer p {
   background-size: cover;
   background-image: url("../images/bamazon.jpg");
 }
+#box_9 {
+  /*group projects*/
+  position: relative;
+  float: left;
+  background-image: url("../images/cyborg.jpg");
+  background-size: cover;
+}
+#box_10 {
+  /*group projects*/
+  position: relative;
+  float: right;
+  background: black;
+  /* background-size: cover;
+  background-image: url("../images/bamazon.jpg"); */
+}
 
 .project_spans {
   /*title/caption on portfolio project pics*/
