@@ -286,8 +286,8 @@ footer p {
   position: relative;
   float: right;
   background: black;
-  /* background-size: cover;
-  background-image: url("../images/bamazon.jpg"); */
+  background-size: cover;
+  background-image: url("../images/burger.png");
 }
 
 .project_spans {
