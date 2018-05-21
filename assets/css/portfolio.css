@@ -218,7 +218,7 @@ footer p {
   /*my first website*/
   position: relative;
   float: left;
-  background-image: url("../images/bond_thumbnail.jpg");
+  background-image: url("../images/Delta32.jpg");
   background-size: cover;
 }
 #box_2 {
@@ -257,7 +257,7 @@ footer p {
   /*group projects*/
   position: relative;
   float: right;
-  background-image: url("../images/teamwork.jpg");
+  background-image: url("../images/nomad_nation.jpg");
   background-size: cover;
 }
 #box_7 {
@@ -297,7 +297,7 @@ footer p {
   margin-top: 105px;
   color: ghostwhite;
   font-size: 150%;
-  padding: 8px 0px 8px 0px;
+  padding: 8px 25px 8px 0px;
   opacity: 0.9;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
