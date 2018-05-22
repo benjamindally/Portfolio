@@ -225,7 +225,7 @@ footer p {
   /*rpg game*/
   position: relative;
   float: right;
-  background-image: url("../images/chrono_trigger_pixel_art.png");
+  background-image: url("../images/rpg.jpg");
   background-size: cover;
 }
 
@@ -249,7 +249,7 @@ footer p {
   /*mobile apps*/
   position: relative;
   float: left;
-  background-image: url("../images/mobile.jpg");
+  background-image: url("../images/liri.jpg");
   background-size: cover;
 }
 
@@ -278,7 +278,7 @@ footer p {
   /*group projects*/
   position: relative;
   float: left;
-  background-image: url("../images/cyborg.jpg");
+  background-image: url("../images/friend_finder.png");
   background-size: cover;
 }
 #box_10 {
@@ -287,7 +287,7 @@ footer p {
   float: right;
   background: black;
   background-size: cover;
-  background-image: url("../images/burger.png");
+  background-image: url("../images/elvis.jpg");
 }
 
 .project_spans {
@@ -351,7 +351,7 @@ input[type="submit"]:hover {
     display: none;
   }
 
-  aside {
+  .main_aside {
     /*aside to right of main content*/
     float: right;
     width: 23%;
@@ -359,20 +359,14 @@ input[type="submit"]:hover {
     margin-left: 20px;
   }
 
-  aside ul li {
+  .main_aside ul li {
     padding: 8px;
     font-size: 80%;
     display: inline;
-    margin-top: 50px;
+    margin: 50px 0px 0px 0px;
   }
   .connect_icons {
     padding-top: 50px;
-  }
-
-  .main {
-    position: relative;
-    float: right;
-    width: 50%;
   }
 
   #portfolio_thumbnails {
@@ -383,9 +377,27 @@ input[type="submit"]:hover {
   .portfolio_links {
     display: inline-block;
   }
+
+  .main_aside {
+    display: none;
+  }
+
+  .media_aside {
+    visibility: visible;
+    margin: 50px 0px 50px 0px;
+  }
+
+  .media_aside ul li {
+    display: inline;
+    padding: 10px;
+  }
+
+  .connect_icons {
+    padding: 0px;
+  }
 }
 
-@media only screen and (min-width: 640px) and (max-width: 768px) {
+/* @media only screen and (min-width: 640px) and (max-width: 768px) {
   .project_photos {
     display: block;
   }
@@ -403,26 +415,22 @@ input[type="submit"]:hover {
     display: none;
   }
 
-  .main {
-    position: relative;
-    /* width: 80%; */
-    height: 60%;
-  }
-
   .main_aside {
     display: none;
   }
 
   .media_aside {
     visibility: visible;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin: 50px 0px 50px 0px;
   }
 
   .media_aside ul li {
     display: inline;
-    padding: 0px 15px 0px 15px;
+    padding: 10px;
+  }
+
+  .connect_icons {
+    padding: 0px;
   }
 
   input[type="text"],
@@ -434,9 +442,9 @@ input[type="submit"]:hover {
   #portfolio_thumbnails {
     height: 80%;
   }
-}
+} */
 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   .project_photos {
     display: block;
   }
@@ -454,12 +462,6 @@ input[type="submit"]:hover {
     display: none;
   }
 
-  #main {
-    position: relative;
-    /* width: 80%; */
-    height: 60%;
-  }
-
   .main_aside {
     display: none;
   }
@@ -467,19 +469,21 @@ input[type="submit"]:hover {
   #main_portfolio_page {
     position: relative;
     width: 100%;
-    height: 70%;
+    /* height: 70%; */
   }
 
   .media_aside {
     visibility: visible;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin: 50px 0px 50px 0px;
   }
 
   .media_aside ul li {
     display: inline;
-    padding: 0px 15px 0px 15px;
+    padding: 10px;
+  }
+
+  .connect_icons {
+    padding: 0px;
   }
 
   #portfolio_thumbnails {
