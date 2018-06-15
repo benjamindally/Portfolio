@@ -289,6 +289,14 @@ footer p {
   background-size: cover;
   background-image: url("../images/elvis.jpg");
 }
+#box_11 {
+  /*group projects*/
+  position: relative;
+  float: left;
+  background: black;
+  background-size: cover;
+  background-image: url("../images/xmenclick.jpg");
+}
 
 .project_spans {
   /*title/caption on portfolio project pics*/
