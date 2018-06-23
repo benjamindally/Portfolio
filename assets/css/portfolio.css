@@ -297,6 +297,14 @@ footer p {
   background-size: cover;
   background-image: url("../images/xmenclick.jpg");
 }
+#box_12 {
+  /*group projects*/
+  position: relative;
+  float: right;
+  background: black;
+  background-size: cover;
+  background-image: url("../images/NASS.jpg");
+}
 
 .project_spans {
   /*title/caption on portfolio project pics*/
