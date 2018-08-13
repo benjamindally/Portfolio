@@ -34,9 +34,16 @@ header {
   width: 100%;
 }
 
-#emblembox {
+.emblembox {
   /*small box around logo above content on all pages*/
   margin: 15px auto 30px auto;
+  width: 80px;
+  position: relative;
+  right: 5px;
+}
+.emblembox_about {
+  /*small box around logo above content on all pages*/
+  margin: 30px auto 30px auto;
   width: 80px;
   position: relative;
   right: 5px;
@@ -218,14 +225,14 @@ footer p {
   /*my first website*/
   position: relative;
   float: left;
-  background-image: url("../images/Delta32.jpg");
+  background-image: url("../images/hambre.png");
   background-size: cover;
 }
 #box_2 {
   /*rpg game*/
   position: relative;
   float: right;
-  background-image: url("../images/rpg.jpg");
+  background-image: url("../images/Delta32.jpg");
   background-size: cover;
 }
 
@@ -233,7 +240,7 @@ footer p {
   /*countdown timer*/
   position: relative;
   float: left;
-  background-image: url("../images/countdown.jpg");
+  background-image: url("../images/xmenclick.jpg");
   background-size: cover;
 }
 
@@ -241,7 +248,7 @@ footer p {
   /*debugging*/
   position: relative;
   float: right;
-  background-image: url("../images/debugging.jpg");
+  background-image: url("../images/NASS.jpg");
   background-size: cover;
 }
 
@@ -249,7 +256,7 @@ footer p {
   /*mobile apps*/
   position: relative;
   float: left;
-  background-image: url("../images/liri.jpg");
+  background-image: url("../images/nomad_nation.jpg");
   background-size: cover;
 }
 
@@ -257,14 +264,14 @@ footer p {
   /*group projects*/
   position: relative;
   float: right;
-  background-image: url("../images/nomad_nation.jpg");
+  background-image: url("../images/liri.jpg");
   background-size: cover;
 }
 #box_7 {
   /*group projects*/
   position: relative;
   float: left;
-  background-image: url("../images/cli.jpg");
+  background-image: url("../images/elvis.jpg");
   background-size: cover;
 }
 #box_8 {
@@ -287,7 +294,7 @@ footer p {
   float: right;
   background: black;
   background-size: cover;
-  background-image: url("../images/elvis.jpg");
+  background-image: url("../images/rpg.jpg");
 }
 #box_11 {
   /*group projects*/
@@ -295,7 +302,7 @@ footer p {
   float: left;
   background: black;
   background-size: cover;
-  background-image: url("../images/xmenclick.jpg");
+  background-image: url("../images/cli.jpg");
 }
 #box_12 {
   /*group projects*/
@@ -303,7 +310,7 @@ footer p {
   float: right;
   background: black;
   background-size: cover;
-  background-image: url("../images/NASS.jpg");
+  background-image: url("../images/firstsite.png");
 }
 
 .project_spans {
@@ -353,6 +360,11 @@ input[type="submit"]:hover {
   visibility: hidden;
 }
 
+.connect_icons_about {
+  padding: 0px 15px 0px 15px;
+  display: inline;
+}
+
 @media only screen and (min-width: 769px) and (max-width: 980px) {
   #logo {
     padding-left: 10px;
@@ -384,6 +396,10 @@ input[type="submit"]:hover {
   .connect_icons {
     padding-top: 50px;
   }
+  .connect_icons_about ul li {
+    padding: 50px 15px 0px 15px;
+    display: inline;
+  }
 
   #portfolio_thumbnails {
     text-align: center;
@@ -406,10 +422,6 @@ input[type="submit"]:hover {
   .media_aside ul li {
     display: inline;
     padding: 10px;
-  }
-
-  .connect_icons {
-    padding: 0px;
   }
 }
 
