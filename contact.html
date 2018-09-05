@@ -4,6 +4,8 @@
 <head>
 	<title>Contact: Benjamin Dally</title>
 	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="	./assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/portfolio.css">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Ubuntu" rel="stylesheet">
@@ -11,6 +13,8 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
 	<link rel="manifest" href="./assets/images/manifest.json">
+	<script type="text/javascript" src="./assets/js/javascript.js"></script>
+
 </head>
 
 <body>
@@ -27,6 +31,8 @@
 			<li>
 				<a class="nav_list" href="portfolio.html" target="_self">Portfolio</a>
 			</li>
+			<li><a class="nav_list" href="resume.html" target="_self">Resume</a></li>
+
 			<li>
 				<a class="nav_list" href="contact.html" target="_self">Contact</a>
 			</li>
@@ -79,22 +85,30 @@
 					<a class="nav_list" href="portfolio.html" target="_self">Portfolio</a>
 				</li>
 				<li>
+					<a class="nav_list" href="resume.html" target="_self">Resume</a>
+				</li>
+				<li>
 					<a class="nav_list" href="contact.html" target="_self">Contact</a>
 				</li>
 			</ul>
 		</div>
 		<div class="main" id="main">
-			<div id="contact_form">
-				<form action="#">
-					<label class="form_labels" for="fname">First&nbsp;Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your Name">
-					<label for="lname">Last Name</label>
-					<input type="text" id="lname" name="lastname" placeholder="example@gmail.com">
+			<div id="contact_form" class="connect_form_wrapper">
+				<form class="contact_form text-center" action="assets/php/contact_form.php" method="POST">
+					<label class="form_labels" for="fname">Name</label>
+
+					<input class="" type="text" id="name" name="name" placeholder=" Your Name">
+					<div class="error" id="name_break"></div>
+					<label for="lname">Email</label>
+					<input class="contact_form_inputs_buttons" type="email" id="email" name="email" placeholder=" Email">
+					<p class="error" id="email_break"></p>
 					<label for="message">Message</label>
-					<textarea id="message" name="message" placeholder="" style="height:200px"></textarea>
-					<input type="submit" value="Submit">
+					<textarea class="contact_form_inputs_buttons" type="text" id="message" name="message" placeholder=" Type your message here"></textarea>
+					<p class="error" id="message_break"></p>
+					<span class="contact_form_inputs_buttons" id="connect_submit_button">Send</button>
 				</form>
 			</div>
+
 		</div>
 		<div class="connect_icons media_aside">
 			<ul>

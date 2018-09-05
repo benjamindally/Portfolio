@@ -342,17 +342,29 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
-input[type="submit"] {
+#connect_submit_button {
   background-color: gray;
   color: white;
+  display: inline;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+#connect_submit_button:hover {
   background-color: lightgray;
 }
 
@@ -361,8 +373,29 @@ input[type="submit"]:hover {
 }
 
 .connect_icons_about {
-  padding: 0px 15px 0px 15px;
+  margin-top: 40px;
+}
+.connect_icons_about li {
+  padding: 0px 30px 0px 15px;
   display: inline;
+}
+
+.downlaod_resume_button {
+  border: 5px solid black;
+  width: 150px;
+  padding: 10px 20px;
+  margin: 50px auto;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.downlaod_resume_button:hover {
+  background: black;
+  color: white;
+}
+
+#download_resume_button:hover {
+  color: white;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 980px) {
@@ -424,53 +457,6 @@ input[type="submit"]:hover {
     padding: 10px;
   }
 }
-
-/* @media only screen and (min-width: 640px) and (max-width: 768px) {
-  .project_photos {
-    display: block;
-  }
-
-  #logo {
-    padding-left: 10px;
-  }
-
-  #my_name {
-    position: relative;
-    right: 5px;
-  }
-
-  #leftnav {
-    display: none;
-  }
-
-  .main_aside {
-    display: none;
-  }
-
-  .media_aside {
-    visibility: visible;
-    margin: 50px 0px 50px 0px;
-  }
-
-  .media_aside ul li {
-    display: inline;
-    padding: 10px;
-  }
-
-  .connect_icons {
-    padding: 0px;
-  }
-
-  input[type="text"],
-  select,
-  textarea {
-    width: 100%;
-  }
-
-  #portfolio_thumbnails {
-    height: 80%;
-  }
-} */
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .project_photos {
